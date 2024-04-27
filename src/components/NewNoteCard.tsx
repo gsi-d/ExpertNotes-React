@@ -25,7 +25,7 @@ export function NewNoteCard({ onNewNoteCreated }: NewNoteCardProps){
       }
     }
 
-    const handleKeyDown = (event: KeyboardEvent) => {
+    const handleKeyDown = (event: any) => {
       console.log(event)
       if(event.key === "Backspace"){
         setShouldShowOnboarding(true)
